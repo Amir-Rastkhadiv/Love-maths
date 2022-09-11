@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 let gameType = this.getAttribute("data-type");
                 runGame(gameType);
+                if (this.getAttribute("data-type") === "division") {
+                    alert("Hey! Please round your answer to the nearest number! :D");
+                }
             }
         });
     }
